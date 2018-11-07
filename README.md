@@ -2,7 +2,6 @@
 
 this is for codes and problem solvings to save
 
-
 ## Dir
 
 ppt还没想好怎么放在git上，感觉一堆ppt文件比较大，大伙可以拿这里的md当草稿，写完贴一些内容放ppt，ppt太满了写md解题报告
@@ -10,7 +9,6 @@ ppt还没想好怎么放在git上，感觉一堆ppt文件比较大，大伙可�
 文件夹是对应的章节，内有各种题目的题解，如需引用图片建议在文件夹内创一个`pic`文件夹然后引用，github目前不兹瓷latex，建议大家先写个latex正式版的然后截个图在旁边
 
 `codes`里面是ac代码的总览（按oj分类）、
-
 
 ## we have plan
 
@@ -42,12 +40,9 @@ ppt还没想好怎么放在git上，感觉一堆ppt文件比较大，大伙可�
 
 ## First Blood
 
-王浩泽: 组合数学(eoj) ddl set
-吉嘉铭: 动态规划1(slices) 
-蒋承旭: 初等数论 ddlset
-侯思卿: 二分答案(slices) ddl set
-李潍君: 动态规划2(题解)  ddl set
-袁仁凯: 模拟类问题(luogu) ddl set
-
-
-P1525,P1083,P1314,P1244
+- 王浩泽: 组合数学(eoj) ddl set
+- 吉嘉铭: 动态规划1(slices)
+- 蒋承旭: 初等数论 ddlset
+- 侯思卿: 二分答案(slices) ddl set
+- 李潍君: 动态规划2(题解)  ddl set
+- 袁仁凯: 模拟类问题(luogu) ddl set
