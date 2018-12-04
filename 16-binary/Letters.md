@@ -3,7 +3,7 @@
 
 ## 【题目描述】
 
-柏林大学有`n`幢公寓楼，依次用`1~n`编号，每幢公寓楼由一系列房间组成，假设第i幢公寓楼有a<sub>i</sub>个房间，分别用1~a<sub>i</sub>编号。
+柏林大学有`n`幢公寓楼，依次用`1~n`编号，每幢公寓楼由一系列房间组成，假设第i幢公寓楼有a<sub>i</sub>个房间，房间号分别为1~a<sub>i</sub>。
 
 有一个快递员要送信到一个房间，但是信封上却没有写明需要送到第几幢第几个房间，只有这个房间在所有房间中的编号（从第一幢楼第一个房间依次编号）。
 
@@ -50,14 +50,161 @@
 
 ## 题目分析
    
+   首先，最简单的方法就是记录房间总数的前缀和，对于查询的编号依次遍历每幢公寓楼的前缀和，第一个大于等于编号的位置x就说明了在第x幢。然后作一下差就能同时得到房间号。
+   
+   ```c++
+   #include <cstdio>
+#include <bits/stdc++.h>
+#include <cmath>
+#include <map>
+#include <iostream>
+#include <cstring>
+#include <algorithm>
+using namespace std;
+#define mst(a,b) memset((a),(b),sizeof(a))
+#define rush() int T;scanf("%d",&T);while(T--)
+
+typedef  long long ll;
+const int maxn = 200005;
+const ll mod = 1e9+7;
+const int INF = 1e9;
+const double eps = 1e-6;
+
+int n,m;
+ll a[maxn];
+ll sum[maxn];
+char s[maxn];
+
+int main()
+{
+    scanf("%d%d",&n,&m);
+    for(int i=1;i<=n;i++)
+    {
+        scanf("%lld",&a[i]);
+        sum[i]=sum[i-1]+a[i];
+    }
+    for(int i=0;i<m;i++)
+    {
+        ll x;
+        scanf("%lld",&x);
+        int pos=-1;
+        for(int j=1;j<=n;j++)
+        {
+            if(sum[j]>=x)
+            {
+                pos=j;
+                break;
+            }
+        }
+        //int pos=lower_bound(sum+1,sum+1+n,x)-sum;
+        ll res=x-sum[pos-1];
+        printf("%d %lld\n",pos,res);
+    }
+}
+```
+   
+   冷静分析一下，其复杂度为O(nm)，显然会超时。
+   
+   于是我们想到可以用二分找这个位置x,这里我们既可以用手写二分，也可以用lower_bound()函数，这样能把时间复杂度降到O(mlogn)。
    
 
-**【代码示例】**
+**【代码示例1】**
 ```c++
+#include <cstdio>
+#include <bits/stdc++.h>
+#include <cmath>
+#include <map>
+#include <iostream>
+#include <cstring>
+#include <algorithm>
+using namespace std;
+#define mst(a,b) memset((a),(b),sizeof(a))
+#define rush() int T;scanf("%d",&T);while(T--)
 
+typedef  long long ll;
+const int maxn = 200005;
+const ll mod = 1e9+7;
+const int INF = 1e9;
+const double eps = 1e-6;
 
+int n,m;
+ll a[maxn];
+ll sum[maxn];
+char s[maxn];
+
+int main()
+{
+    scanf("%d%d",&n,&m);
+    for(int i=1;i<=n;i++)
+    {
+        scanf("%lld",&a[i]);
+        sum[i]=sum[i-1]+a[i];
+    }
+    for(int i=0;i<m;i++)
+    {
+        ll x;
+        scanf("%lld",&x);
+        int pos=lower_bound(sum+1,sum+1+n,x)-sum;
+        ll res=x-sum[pos-1];
+        printf("%d %lld\n",pos,res);
+    }
+}
 ```
 
+**【代码示例2】**
+```c++
+#include <cstdio>
+#include <bits/stdc++.h>
+#include <cmath>
+#include <map>
+#include <iostream>
+#include <cstring>
+#include <algorithm>
+using namespace std;
+#define mst(a,b) memset((a),(b),sizeof(a))
+#define rush() int T;scanf("%d",&T);while(T--)
+
+typedef  long long ll;
+const int maxn = 200005;
+const ll mod = 1e9+7;
+const int INF = 1e9;
+const double eps = 1e-6;
+
+int n,m;
+ll a[maxn];
+ll sum[maxn];
+char s[maxn];
+
+int main()
+{
+    scanf("%d%d",&n,&m);
+    for(int i=1;i<=n;i++)
+    {
+        scanf("%lld",&a[i]);
+        sum[i]=sum[i-1]+a[i];
+    }
+    for(int i=0;i<m;i++)
+    {
+        ll x;
+        scanf("%lld",&x);
+        int pos=-1;
+        int l=1,r=n;
+        while(l<=r)
+        {
+            int mid=(l+r)/2;
+            if(sum[mid]>=x)
+            {
+                pos=mid;
+                r=mid-1;
+            }
+            else l=mid+1;
+        }
+        ll res=x-sum[pos-1];
+        printf("%d %lld\n",pos,res);
+    }
+}
+
+```
    
    
    
