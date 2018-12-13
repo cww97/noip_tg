@@ -1,4 +1,4 @@
-# Counting Arrays
+# Rectangle
 
 
 ## 题目描述
