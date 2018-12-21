@@ -1,4 +1,4 @@
-# Counting Arrays
+# Strings
 
 
 ## 题目描述
