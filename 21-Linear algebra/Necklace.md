@@ -4,123 +4,144 @@
 ## 题目描述
 
 一条长度为`n`的项链，由红色珠子和蓝色珠子（分别用`1`和`0`表示）组成
+
 在连续的素数子段中，红色珠子的个数不能少于蓝色珠子
+
 问组成这个项链有多少种方案，求方案数模`1000000007`
 
 ## 输入格式
 
 第一行一个整数`T`，表示数据组数。
-第二行一个整数`n`，表示珠子总个数。
 
+接下来`T`行，每行一个整数`n`，表示珠子总个数。
 
 
 ## 输出格式
 
-输出走法的数量。
+对于每组数据输出方案数。
 
 ## 输入样例
 
-    2 3
+    2 
+    3
+    4
 
 ## 输出样例
 
     3
+    4
  
     
 ## 数据范围
-- `2 ≤ N,M ≤ 1000`
+- `1 ≤ T ≤ 10000`
+- `2 ≤ T ≤ 10^18`
 
 **【测试网站】**
 
-[51nod 1118](https://www.51nod.com/Challenge/Problem.html#!#problemId=1118) 
+[HDOJ 6030](http://acm.hdu.edu.cn/showproblem.php?pid=6030) 
 
 ## 题目分析
 
-  根据题意，我们总共需要往右走`n-1`步，往下走`m-1`步，共`n+m-2`步，我们要做的其实就是在这`n+m-2`步中选出`m-1`个位置向右走即可。那么方案数即为`C(n+m-2,n-1)`。
+  对于这种数据范围很大的题目，我们可以想到可能会用到矩阵快速幂。
   
-  由于数据范围较小，我们直接了可以用杨辉三角求组合数。时间复杂度为`O(n * n)`
+  其实只要推出前几组就可以找到规律。
+  
+  当`i<4`时，`a[i]=i+1`
+  
+  当`i>=4`时，`a[i]=a[i-2]+a[i-3]+a[i-4]`
+  
+  通过递推式构造转移矩阵：
+  
+     | 0 1 1 1 |     | F[n-1] |     |   F[n]   |
+     | 1 0 0 0 |  *  | F[n-2] |  =  |   F[n-1] |
+     | 0 1 0 0 |     | F[n-3] |     |   F[n-2] |
+     | 0 0 1 0 |     | F[n-4] |     |   F[n-3] |
 
-## 代码示例1
+
+## 代码示例
 
 ```
-#include <cstdio>
-int dp[1001][1001],n,m,ans;
-int main()
-{
-    for(int i=1;i<=1001;++i)
-    {
-        dp[1][i]=1;
-        dp[i][1]=1;
-    }
-    scanf("%d%d",&m,&n);
-    for(int i=2;i<=m;++i)
-    {
-        for(int j=2;j<=n;++j)
-        {
-            dp[i][j]=dp[i-1][j]+dp[i][j-1];
-            dp[i][j]%=1000000007;
-        }
-    }
-    printf("%d",dp[m][n]);
-}
-```
-  当然也可以通过预处理快速地求组合数。总时间复杂度`O(n)`
-
-## 代码示例2
-
-```c++
 #include <bits/stdc++.h>
 using namespace std;
 #define mst(a,b) memset((a),(b),sizeof(a))
-#define rush() int T;scanf("%d",&T);while(T--)
-
-typedef long long ll;
-const int maxn = 2005;
-const ll mod = 1e9+7;
+#define f(i,a,b) for(int i=(a);i<(b);++i)
+#define ll long long
+const int maxn = 4;
+const int mod = 1e9+7;
 const int INF = 0x3f3f3f3f;
-const double eps = 1e-9;
-
-int n,m;
-ll fac[maxn],inv[maxn];
-
-ll fast_mod(ll a,ll x,ll Mod)
+const double eps = 1e-6;
+#define rush() int T;scanf("%d",&T);while(T--)
+struct Matrix
 {
-    ll ans=1;
-    while(x)
+    ll temp[maxn][maxn];
+} a;
+void init()
+{
+    f(i,0,maxn)
+    f(j,0,maxn)
     {
-        if(x&1) ans=(ans*a)%Mod;
-        a=(a*a)%Mod;
-        x/=2;
+        a.temp[i][j]=0;
     }
+    a.temp[0][1]=a.temp[0][2]=a.temp[0][3]=1;
+    a.temp[1][0]=a.temp[2][1]=a.temp[3][2]=1;
+}
+Matrix mul(Matrix a,Matrix b)
+{
+    Matrix ans;
+    for (int i=0; i<maxn; i++)
+        for (int j=0; j<maxn; j++)
+        {
+            ans.temp[i][j]=0;
+            for (int k=0; k<maxn; k++)
+            {
+                ans.temp[i][j]+=a.temp[i][k]*b.temp[k][j];
+                ans.temp[i][j]%=mod;
+            }
+        }
     return ans;
 }
-
-void init()    //通过逆元预处理，以便O(1)求解大范围组合数
+void fun(Matrix ans,ll k)
 {
-    fac[0]=1;
-    for(int i=1; i<maxn; i++)
+    for(int i=0; i<maxn; i++)
+        for(int j=0; j<maxn; j++)
+            a.temp[i][j]=(i==j);
+    while(k)
     {
-        fac[i]=(fac[i-1]*i)%mod;
-    }
-    inv[maxn-1]=fast_mod(fac[maxn-1],mod-2,mod);
-    for(int i=maxn-2; i>=0; i--)
-    {
-        inv[i]=(inv[i+1]*(i+1))%mod;
+        if(k%2)
+            a=mul(a,ans);
+        ans=mul(ans,ans);
+        k/=2;
     }
 }
-
-ll C(int n,int m)
-{
-    return fac[n]*inv[m]%mod*inv[n-m]%mod;
-}
-
 int main()
 {
-    init();
-    scanf("%d%d",&n,&m);
-    printf("%lld\n",C(n+m-2,n-1));
+    Matrix t;
+    ll n;
+    f(i,0,maxn)
+    f(j,0,maxn)
+    {
+        t.temp[i][j]=0;
+    }
+    t.temp[0][0]=4;
+    t.temp[1][0]=3;
+    t.temp[2][0]=2;
+    t.temp[3][0]=1;
+    rush()
+    {
+        init();
+        scanf("%I64d",&n);
+        if(n<4)
+        {
+            printf("%I64d\n",n+1);
+            continue;
+        }
+        fun(a,n-3);
+        a=mul(a,t);
+        ll ans=a.temp[0][0]%mod;
+        printf("%I64d\n",ans);
+    }
+    return 0;
 }
-
 ```
    
    
