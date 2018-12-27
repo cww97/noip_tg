@@ -56,7 +56,7 @@
 
 ## 代码示例
 
-```
+```c++
 #include <cstdio>
 #include <vector>
 #include <queue>

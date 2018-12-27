@@ -61,7 +61,7 @@
 
 ## 代码示例
 
-```
+```c++
 #include <bits/stdc++.h>
 using namespace std;
 #define mst(a,b) memset((a),(b),sizeof(a))
