@@ -128,7 +128,7 @@ int query(int x)
     return x^mark[now];
 }
 
-void dfs(int now,int x)                //dfs求出f(0,i)
+void dfs(int now,int x)                 //dfs求出f(0,i)
 {
     val[now]=x;
     vis[now]=1;
