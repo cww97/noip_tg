@@ -1,10 +1,26 @@
 # Draft
 
+## Who
+
+(排序为字典序)
+
+id |who
+--- | ---
+Abeillezhou| 周博
+beckywcn | 王晨妮
+cww97 | 陈伟文
+Dust-heart | 姚金辉
+lianfengs | 蒋程旭
+phython96 | 蔡少斐
+Tawn0000 | 凌晓
+zoesky1 | 朱明清
+
 ## Next Plan
 
-tire的课件优化
-
-字符串进阶 - 马拉车
+- tire的课件优化
+- 字符串进阶 - 马拉车
+- warmup: 挑几道，贪心里面再挑几道
+- 高精度，贪心进阶，搜索优化，搜索优化，动态规划2
 
 ## 2019.2.14
 
@@ -13,8 +29,9 @@ tire的课件优化
 - csp: 数论
 - lx: 背包专题
 - yjh: 图论建模
-- jjm: 
-
+- jjm: 优先队列？？？
+- lwg: 
+- jxh: 
 
 ## 2019.1.24
 
