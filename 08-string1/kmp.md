@@ -1,10 +1,10 @@
-#字符串初阶
+# 字符串初阶
 
 
 对于初阶字符串问题而言，我们最常用的莫过于KMP问题，因此本章会整理一些有关于KMP的题型，并且总结其中的规律与问题
 
 
-##洛谷 P3375 KMP字符串匹配
+## 洛谷 P3375 KMP字符串匹配
 https://www.luogu.org/problemnew/show/P3375
 
 题目大意：给定两个字符串s1 和 s2 ，其中 s2 为s1的子串，求出s2 在s1中所有出现的位置，并输出子串的前缀数组next
@@ -14,7 +14,7 @@ https://www.luogu.org/problemnew/show/P3375
 代码
 https://paste.ubuntu.com/p/DTg99Hk8Ry/
 
-##洛谷 P4391 无线传输
+## 洛谷 P4391 无线传输
 https://www.luogu.org/problemnew/show/P4391
 
 题目大意：给定一个字符串，求该字符串的最小循环节
@@ -24,7 +24,7 @@ https://www.luogu.org/problemnew/show/P4391
 代码：
 https://paste.ubuntu.com/p/PnBtq6wjTQ/
 
-##uva 1328  
+## uva 1328  
 https://www.luogu.org/problemnew/show/UVA1328
 
 题目大意：给定一个字符串，求该字符串的最小循环节 
@@ -48,7 +48,7 @@ next[i] 表示当前匹配的最长前缀和后缀相等
 
 代码：https://paste.ubuntu.com/p/6VsRgDj2QQ/
 
-##洛谷 P2375 [NOI2014]动物园
+## 洛谷 P2375 [NOI2014]动物园
 
 https://www.luogu.org/problemnew/show/P2375
 
@@ -60,7 +60,7 @@ https://www.luogu.org/problemnew/show/P2375
 
 代码：https://paste.ubuntu.com/p/bZqRSkwHtY/
 
-##codeforces 126B password
+## codeforces 126B password
 
 http://codeforces.com/contest/126/problem/B
 
