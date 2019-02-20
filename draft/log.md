@@ -46,6 +46,7 @@ c++ 特性
 - C语言 gets（）和scanf（）函数的区别 https://blog.csdn.net/lwgkzl/article/details/53222676
 - string用法 https://blog.csdn.net/lwgkzl/article/details/53729256
 - scnaf先后输入同一个字符数组是否会有影响 https://blog.csdn.net/lwgkzl/article/details/53781265
+- 别用cin https://acm.ecnu.edu.cn/problem/3532/discussion/
 
 
 
