@@ -24,12 +24,12 @@ zoesky1 | 朱明清
 
 ## 2019.2.14
 
-- zmq: 回文树
+- ~~zmq: 回文树~~
 - wcn: kmp, next lcs
-- csf: 数论，one
+- csf: 数论，“刚几天没时间，一有时间我就补上”
 - lx: 背包专题
 - yjh: 图论建模
-- jjm: 优先队列
+- ~~jjm: 优先队列~~
 - lwg: tire
 - jxh: 图论基本概念课件
 

@@ -4,14 +4,56 @@
 对于初阶字符串问题而言，我们最常用的莫过于KMP问题，因此本章会整理一些有关于KMP的题型，并且总结其中的规律与问题
 
 
-## 洛谷 P3375 KMP字符串匹配
-https://www.luogu.org/problemnew/show/P3375
+## KMP字符串匹配
 
-题目大意：给定两个字符串s1 和 s2 ，其中 s2 为s1的子串，求出s2 在s1中所有出现的位置，并输出子串的前缀数组next
+[洛谷P3375](https://www.luogu.org/problemnew/show/P3375)
 
-题目分析：这道题就是KMP的一个经典的模板题型，通过kmp算法先求出next数组，然后对模式串和目标串进行匹配。最后确定出现位置即可
+### 题目大意
 
-代码
+给定两个字符串s1 和 s2 ，其中 s2 为s1的子串，求出s2 在s1中所有出现的位置，并输出子串的前缀数组next
+
+### 题目分析
+
+这道题就是KMP的一个经典的模板题型，通过kmp算法先求出next数组，然后对模式串和目标串进行匹配。最后确定出现位置即可
+
+### 代码
+
+```c++
+#include<iostream>
+#include<cstring>
+#define MAXN 1000010
+using namespace std;
+int kmp[MAXN];
+int la,lb,j; 
+char a[MAXN],b[MAXN];
+int main()
+{
+    cin>>a+1;
+    cin>>b+1;
+    la=strlen(a+1);
+    lb=strlen(b+1);
+    for (int i=2;i<=lb;i++)
+       {     
+       while(j&&b[i]!=b[j+1])
+        j=kmp[j];    
+       if(b[j+1]==b[i])j++;    
+        kmp[i]=j;
+       }
+    j=0;
+    for(int i=1;i<=la;i++)
+       {
+          while(j>0&&b[j+1]!=a[i])
+           j=kmp[j];
+          if (b[j+1]==a[i]) 
+           j++;
+          if (j==lb) {cout<<i-lb+1<<endl;j=kmp[j];}
+       }
+
+    for (int i=1;i<=lb;i++)
+    cout<<kmp[i]<<" ";
+    return 0;
+}
+```
 https://paste.ubuntu.com/p/DTg99Hk8Ry/
 
 ## 洛谷 P4391 无线传输
