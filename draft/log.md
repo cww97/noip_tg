@@ -26,7 +26,7 @@ zoesky1 | 朱明清
 
 - zmq: 回文树
 - wcn: kmp, next lcs
-- csp: 数论
+- csf: 数论，one
 - lx: 背包专题
 - yjh: 图论建模
 - jjm: 优先队列
