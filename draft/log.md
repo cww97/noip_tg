@@ -61,7 +61,10 @@ c++ 特性
 
 图论算法1：少多源最短路模板题。少上难度的题
 
-二分 拓扑排序 DAG最长路 https://acm.ecnu.edu.cn/problem/3681/
+二分 拓扑排序 DAG最长路 
+- https://acm.ecnu.edu.cn/problem/3681/
+- https://www.cnblogs.com/aiyi2000/p/9424954.html
+
 
 数学
 - 完全平法，方差 https://acm.ecnu.edu.cn/problem/3678/
