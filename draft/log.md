@@ -58,7 +58,15 @@ c++ 特性
 - https://blog.csdn.net/lwgkzl/article/details/52975911
 - https://blog.csdn.net/lwgkzl/article/details/52988223
 
+
 图论算法1：少多源最短路模板题。少上难度的题
+
+二分 拓扑排序 DAG最长路 https://acm.ecnu.edu.cn/problem/3681/
+
+数学
+- 完全平法，方差 https://acm.ecnu.edu.cn/problem/3678/
+- 进制转换，前缀和 https://acm.ecnu.edu.cn/problem/3679/
+
 
 
 ## 2019.2.20
