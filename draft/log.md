@@ -29,12 +29,10 @@ zoesky1 | 朱明清
 ac自动机，tire树，马拉车，博弈论
 
 课件: hash, 
-哈希https://blog.csdn.net/lwgkzl/article/details/81866016
-哈希https://blog.csdn.net/lwgkzl/article/details/76870436
-哈希https://blog.csdn.net/lwgkzl/article/details/76868465
+- 哈希 https://blog.csdn.net/lwgkzl/article/details/81866016
+- 哈希 https://blog.csdn.net/lwgkzl/article/details/76870436
+- 哈希 https://blog.csdn.net/lwgkzl/article/details/76868465
 
-- https://blog.csdn.net/lwgkzl/article/list/1?
-- leetcode机智脑洞题
 
 c++ 特性
 - c++ pair详解 https://blog.csdn.net/lwgkzl/article/details/84202383
@@ -49,11 +47,6 @@ c++ 特性
 - 别用cin https://acm.ecnu.edu.cn/problem/3532/discussion/
 
 
-
-斜率dp: https://blog.csdn.net/lwgkzl/article/details/76033067
-
-尺取法 https://blog.csdn.net/lwgkzl/article/details/53768898
-
 并查集
 - https://blog.csdn.net/lwgkzl/article/details/53575125
 - https://blog.csdn.net/lwgkzl/article/details/53369520
@@ -65,6 +58,8 @@ c++ 特性
 - https://blog.csdn.net/lwgkzl/article/details/52975911
 - https://blog.csdn.net/lwgkzl/article/details/52988223
 
+图论算法1：少多源最短路模板题。少上难度的题
+
 
 ## 2019.2.20
 
@@ -75,7 +70,7 @@ c++ 特性
 - csf: 数论，“刚几天没时间，一有时间我就补上”, 扩欧习题
 - lx: 启发式搜索，迭代加深搜索
 - yjh: 贪心
-- jjm: dp2-1
+- jjm: ~~补考，休息两周~~
 
 
 ## 2019.2.14
