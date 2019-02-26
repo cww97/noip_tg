@@ -241,7 +241,8 @@ int main()
     dfs(0,0,0.0); 
     printf("%.2f",ans);
     return 0;
-}```
+}
+```
 
 ## 滑雪
 [P1434 [SHOI2002]
