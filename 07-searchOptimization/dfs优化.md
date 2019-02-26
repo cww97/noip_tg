@@ -187,7 +187,8 @@ int main()
     if(minn==2147483647) printf("%d",0);
       else printf("%d",minn);
     return 0;
-}```
+}
+```
 
 
 
