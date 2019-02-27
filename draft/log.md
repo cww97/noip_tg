@@ -17,14 +17,11 @@ phython96 | 蔡少斐
 Tawn0000 | 凌晓
 zoesky1 | 朱明清
 
-
 ## Next Plan
 
-- 删除四边形不等式
-
 图论
-- KM
-- LCA
+- KM算法
+- LCA题目
 
 字符串
 - 马拉车习题
@@ -37,7 +34,7 @@ zoesky1 | 朱明清
 others
 - dp优化课件
 - 博弈论
-- 难的dp123(luogu)
+- 难的dp123(luogu)-jjm
 - 质数筛专题加题目
 
 ## 2019.2.20
