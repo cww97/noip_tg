@@ -21,20 +21,20 @@ LL power(LL a, LL x, const LL &mod){
     return ans % mod;
 }
 
-//¿ìËÙ³Ë·¨
+//å¿«é€Ÿä¹˜æ³•
 LL fast_multi(LL m, LL n, LL mod){
-    LL ans = 0;//×¢Òâ³õÊ¼»¯ÊÇ0£¬²»ÊÇ1
+    LL ans = 0;//æ³¨æ„åˆå§‹åŒ–æ˜¯0ï¼Œä¸æ˜¯1
     n = (n % mod + mod) % mod;
     for (;n; n >>= 1){
         if (n & 1) ans = (ans + m) % mod;
-        m = (m + m) % mod;//ºÍ¿ìËÙÃİÒ»Ñù£¬Ö»²»¹ıÕâÀïÊÇ¼Ó
+        m = (m + m) % mod;//å’Œå¿«é€Ÿå¹‚ä¸€æ ·ï¼Œåªä¸è¿‡è¿™é‡Œæ˜¯åŠ 
     }
     return ans % mod;
 }
-LL fast_pow(LL a, LL n, LL mod){//¿ìËÙÃİ
+LL fast_pow(LL a, LL n, LL mod){//å¿«é€Ÿå¹‚
     LL ans = 1;
     for (;n;n >>= 1){
-        if (n & 1) ans = fast_multi(ans, a, mod) % mod;//²»ÄÜÖ±½Ó³Ë
+        if (n & 1) ans = fast_multi(ans, a, mod) % mod;//ä¸èƒ½ç›´æ¥ä¹˜
         a = fast_multi(a, a, mod) % mod;
     }
     return ans;

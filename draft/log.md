@@ -19,23 +19,35 @@ zoesky1 | 朱明清
 
 ## Next Plan
 
+删除
+- 06A-栈和队列
+- 01A-顺序选择循环
+
 图论
 - KM算法
 - LCA题目
+- tarjan题目
 
 字符串
-- 马拉车习题
-- tire树习题
-- HDU1251-统计难题，
-- HDU1305-Immediate Decodability，
-- HDU1298-T9，UVA1401 - Remember the Word，
+- 马拉车习题(ppt后面)
+- tire树习题加两题
+- HDU1298-T9，UVA1401 - Remember the Word
 - NBUT1597:Find MaxXorSum
 
+dp
+- dp2优化课件(单调队列)
+- 区间dp加题目
+- 概率dp加题目
+
 others
-- dp优化课件
-- 博弈论
+- 高斯消元
+- 博弈论???
 - 难的dp123(luogu)-jjm
 - 质数筛专题加题目
+- 同余扩欧剩余逆元题目
+- 更高难度的组合数
+- 二分与图论加题目(架设电话线, 关押罪犯)
+- 二分与模拟加题(聪明的质检员)
 
 ## 2019.2.20
 
