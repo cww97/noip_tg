@@ -21,18 +21,37 @@ zoesky1 | 朱明清
 ## Next Plan
 
 - warmup: 挑几道，贪心里面再挑几道
-- 高精度，贪心进阶，dp优化
+- dp优化
 - 删除四边形不等式
 
-### lwg: 
+二分 拓扑排序 DAG最长路 
+- https://acm.ecnu.edu.cn/problem/3681/
+- https://www.cnblogs.com/aiyi2000/p/9424954.html
 
-ac自动机，tire树，马拉车，博弈论
+数学
+- 完全平法，方差 https://acm.ecnu.edu.cn/problem/3678/
+- 进制转换，前缀和 https://acm.ecnu.edu.cn/problem/3679/
 
-课件: hash, 
-- 哈希 https://blog.csdn.net/lwgkzl/article/details/81866016
-- 哈希 https://blog.csdn.net/lwgkzl/article/details/76870436
-- 哈希 https://blog.csdn.net/lwgkzl/article/details/76868465
+组合数学
+- 抽屉原理
+- 容斥原理
 
+图论
+- KM
+- LCA
+
+不急：tire树习题，马拉车习题，博弈论
+
+## 2019.2.20
+
+- zmq: 基础哈希
+- lwg: ac自动机
+- wcn: 并查集
+- jhx: 
+- csf: 
+- lx: stl 与 读入
+- yjh: 最短路生成树完善
+- jjm: ~~补考，休息两周，继续休假~~
 
 c++ 特性
 - c++ pair详解 https://blog.csdn.net/lwgkzl/article/details/84202383
@@ -46,6 +65,10 @@ c++ 特性
 - scnaf先后输入同一个字符数组是否会有影响 https://blog.csdn.net/lwgkzl/article/details/53781265
 - 别用cin https://acm.ecnu.edu.cn/problem/3532/discussion/
 
+课件: hash, 
+- 哈希 https://blog.csdn.net/lwgkzl/article/details/81866016
+- 哈希 https://blog.csdn.net/lwgkzl/article/details/76870436
+- 哈希 https://blog.csdn.net/lwgkzl/article/details/76868465
 
 并查集
 - https://blog.csdn.net/lwgkzl/article/details/53575125
@@ -54,37 +77,15 @@ c++ 特性
 - https://blog.csdn.net/lwgkzl/article/details/53364813
 - https://blog.csdn.net/lwgkzl/article/details/53648303
 
-矩阵快速幂
-- https://blog.csdn.net/lwgkzl/article/details/52975911
-- https://blog.csdn.net/lwgkzl/article/details/52988223
-
-
-图论算法1：少多源最短路模板题。少上难度的题
-
-二分 拓扑排序 DAG最长路 
-- https://acm.ecnu.edu.cn/problem/3681/
-- https://www.cnblogs.com/aiyi2000/p/9424954.html
-
-
-数学
-- 完全平法，方差 https://acm.ecnu.edu.cn/problem/3678/
-- 进制转换，前缀和 https://acm.ecnu.edu.cn/problem/3679/
-
-组合数学
-- 抽屉原理
-- 容斥原理
-
-
-
 ## 2019.2.20
 
 - zmq: ~~回文树课件~~
-- lwg: 课件：马拉车
-- wcn: dfs优化
-- jxh: 双向bfs
+- lwg: ~~课件：马拉车~~
+- wcn: ~~dfs优化~~
+- jhx: ~~双向bfs~~
 - csf: ~~数论，“刚几天没时间，一有时间我就补上”, 扩欧习题~~
-- lx: 启发式搜索，迭代加深搜索
-- yjh: 贪心
+- lx: 启发式搜索，迭代加深搜索， “正在做”
+- yjh: ~~贪心~~
 - jjm: ~~补考，休息两周~~
 
 
