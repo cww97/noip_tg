@@ -30,9 +30,7 @@ zoesky1 | 朱明清
 
 字符串
 - 马拉车习题(ppt后面)
-- tire树习题加两题
-- HDU1298-T9，UVA1401 - Remember the Word
-- NBUT1597:Find MaxXorSum
+- tire树习题加两题HDU1298-T9,UVA1401-Remember the Word;NBUT1597:Find MaxXorSum
 
 dp
 - dp2优化课件(单调队列)
@@ -40,12 +38,11 @@ dp
 - 概率dp加题目
 
 others
-- 高斯消元
-- 博弈论???
 - 难的dp123(luogu)-jjm
 - 质数筛专题加题目
 - 同余扩欧剩余逆元题目
-- 更高难度的组合数
+- 更高难度的组合数两道题待补充
+- 组合数学ppt要重新做(lwg)
 - 二分与图论加题目(架设电话线, 关押罪犯)
 - 二分与模拟加题(聪明的质检员)
 
@@ -106,6 +103,11 @@ others
 - lx: 位运算
 - zmq: 哈希
 - hsq: 状压
+
+## 省选(可能这辈子都做不完了)
+
+- 高斯消元
+- 博弈论???
 
 ## 完成就删
 
