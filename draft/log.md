@@ -20,62 +20,33 @@ zoesky1 | 朱明清
 
 ## Next Plan
 
-- warmup: 挑几道，贪心里面再挑几道
-- dp优化
 - 删除四边形不等式
-
-二分 拓扑排序 DAG最长路 
-- https://acm.ecnu.edu.cn/problem/3681/
-- https://www.cnblogs.com/aiyi2000/p/9424954.html
-
-数学
-- 完全平法，方差 https://acm.ecnu.edu.cn/problem/3678/
-- 进制转换，前缀和 https://acm.ecnu.edu.cn/problem/3679/
-
-组合数学
-- 抽屉原理
-- 容斥原理
 
 图论
 - KM
 - LCA
 
-不急：tire树习题，马拉车习题，博弈论
+字符串
+- tire树习题
+- 马拉车习题
+
+others
+- dp优化课件
+- 博弈论
+- 难的dp123(luogu)
+- 质数筛专题加题目
 
 ## 2019.2.20
 
 - zmq: 基础哈希
 - lwg: ac自动机
 - wcn: 并查集
-- jhx: 
-- csf: 
+- jhx: 容斥
+- csf: 抽屉原理
 - lx: stl 与 读入
 - yjh: 最短路生成树完善
 - jjm: ~~补考，休息两周，继续休假~~
 
-c++ 特性
-- c++ pair详解 https://blog.csdn.net/lwgkzl/article/details/84202383
-- c++ auto, https://blog.csdn.net/lwgkzl/article/details/82110068
-- C++结构体指针 常用用法及注意事项, https://blog.csdn.net/lwgkzl/article/details/81866016
-
-字符串与读入
-- getline https://blog.csdn.net/lwgkzl/article/details/53735914
-- C语言 gets（）和scanf（）函数的区别 https://blog.csdn.net/lwgkzl/article/details/53222676
-- string用法 https://blog.csdn.net/lwgkzl/article/details/53729256
-- scnaf先后输入同一个字符数组是否会有影响 https://blog.csdn.net/lwgkzl/article/details/53781265
-- 别用cin https://acm.ecnu.edu.cn/problem/3532/discussion/
-
-课件: hash, 
-- 哈希 https://blog.csdn.net/lwgkzl/article/details/81866016
-- 哈希 https://blog.csdn.net/lwgkzl/article/details/76870436
-- 哈希 https://blog.csdn.net/lwgkzl/article/details/76868465
-
-并查集
-- https://blog.csdn.net/lwgkzl/article/details/53575125
-- https://blog.csdn.net/lwgkzl/article/details/53369520
-- https://blog.csdn.net/lwgkzl/article/details/53365278
-- https://blog.csdn.net/lwgkzl/article/details/53364813
-- https://blog.csdn.net/lwgkzl/article/details/53648303
 
 ## 2019.2.20
 
@@ -122,3 +93,29 @@ c++ 特性
 - lx: 位运算
 - zmq: 哈希
 - hsq: 状压
+
+## 完成就删
+
+c++ 特性
+- c++ pair详解 https://blog.csdn.net/lwgkzl/article/details/84202383
+- c++ auto, https://blog.csdn.net/lwgkzl/article/details/82110068
+- C++结构体指针 常用用法及注意事项, https://blog.csdn.net/lwgkzl/article/details/81866016
+
+字符串与读入
+- getline https://blog.csdn.net/lwgkzl/article/details/53735914
+- C语言 gets（）和scanf（）函数的区别 https://blog.csdn.net/lwgkzl/article/details/53222676
+- string用法 https://blog.csdn.net/lwgkzl/article/details/53729256
+- scnaf先后输入同一个字符数组是否会有影响 https://blog.csdn.net/lwgkzl/article/details/53781265
+- 别用cin https://acm.ecnu.edu.cn/problem/3532/discussion/
+
+课件: hash, 
+- 哈希 https://blog.csdn.net/lwgkzl/article/details/81866016
+- 哈希 https://blog.csdn.net/lwgkzl/article/details/76870436
+- 哈希 https://blog.csdn.net/lwgkzl/article/details/76868465
+
+并查集
+- https://blog.csdn.net/lwgkzl/article/details/53575125
+- https://blog.csdn.net/lwgkzl/article/details/53369520
+- https://blog.csdn.net/lwgkzl/article/details/53365278
+- https://blog.csdn.net/lwgkzl/article/details/53364813
+- https://blog.csdn.net/lwgkzl/article/details/53648303
