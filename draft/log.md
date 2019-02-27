@@ -27,8 +27,12 @@ zoesky1 | 朱明清
 - LCA
 
 字符串
-- tire树习题
 - 马拉车习题
+- tire树习题
+- HDU1251-统计难题，
+- HDU1305-Immediate Decodability，
+- HDU1298-T9，UVA1401 - Remember the Word，
+- NBUT1597:Find MaxXorSum
 
 others
 - dp优化课件
