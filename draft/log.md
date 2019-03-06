@@ -19,16 +19,16 @@ zoesky1 | 朱明清
 
 ## 2019.3.6
 
-- lwg: 
-- wcn: 
+- lwg: lca题目
+- wcn: 质数晒专题题目充实
 - jhx: 马拉车习题
 - csf: 区间dp与概率dp加题目
-- yjh: 
-- lzp: 
+- yjh: 二分与图论模拟
+- lzp: 同余专题题目
 - zmq: ~~做毕设，五月继续~~
 - jjm: ~~3.9 3.10号还有两场~~
 
-## 2019.2.20
+## 2019.2.27
 
 - zmq: ~~基础哈希，做毕设，五月继续~~
 - lwg: ~~ac自动机~~
@@ -116,19 +116,9 @@ Schedule
 
 ## 省选(可能这辈子都做不完了)
 
-- 高斯消元
 - 博弈论???
 
-## 完成就删
+## 下周搞定了删
 
-课件: hash, 
-- 哈希 https://blog.csdn.net/lwgkzl/article/details/81866016
-- 哈希 https://blog.csdn.net/lwgkzl/article/details/76870436
-- 哈希 https://blog.csdn.net/lwgkzl/article/details/76868465
-
-并查集
-- https://blog.csdn.net/lwgkzl/article/details/53575125
-- https://blog.csdn.net/lwgkzl/article/details/53369520
-- https://blog.csdn.net/lwgkzl/article/details/53365278
-- https://blog.csdn.net/lwgkzl/article/details/53364813
-- https://blog.csdn.net/lwgkzl/article/details/53648303
+- 二分与图论加题目(架设电话线, 关押罪犯)
+- 二分与模拟加题(聪明的质检员)

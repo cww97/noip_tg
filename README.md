@@ -33,19 +33,15 @@ Chapter | Content
 ## Next Plan
 
 图论
-- KM算法
 
-- LCA题目 https://blog.csdn.net/m0_37809890/article/details/82856158
+- KM算法
 
 - tarjan题目
 
 dp
 - dp2优化课件(单调队列)
 
-- 区间dp加题目
-- 概率dp加题目
-
-- 难的dp123(luogu)
+- 难的dp123(luogu)(分三周)
 
 - 数位dp https://blog.csdn.net/m0_37809890/article/details/82703944
 
@@ -54,18 +50,9 @@ dp
 
 others
 
-- 质数筛专题加题目
 - 高斯消元 https://blog.csdn.net/m0_37809890/article/details/80947182
-- 同余扩欧剩余逆元题目
 
-- 组合数学ppt要重新做
-
-- 二分与图论加题目(架设电话线, 关押罪犯)
-- 二分与模拟加题(聪明的质检员)
-
-字符串
-- 马拉车习题(ppt后面)
-
+- 组合数学ppt要拆成多个小专题(只管拆就行了，细化留给后来人)
 
 
 ## markdown tips:
