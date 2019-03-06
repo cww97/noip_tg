@@ -12,7 +12,7 @@ Chapter | Content
 04堆| 彪悍的人生不需要解释
 05贪心算法进阶| 贪心的一些比较难的题(简单的在普及)
 06搜索建模 | 回顾DFS和BFS, 搜索建模(习题) 
-07搜索优化 | 剪枝优化, 双向搜索
+07搜索优化 | 剪枝优化, 双向搜索·
 08字符串初阶 | KMP(find)，Manacher
 09图论基础 | 图的概念与遍历, 拓扑排序, 欧拉回路
 10图论常用算法1 | 并查集->生成树, 最短路
@@ -32,36 +32,41 @@ Chapter | Content
 
 ## Next Plan
 
-删除
-- 06A-栈和队列
-- 01A-顺序选择循环
-
 图论
 - KM算法
-- LCA题目 https://blog.csdn.net/m0_37809890/article/details/82856158
-- tarjan题目
 
-字符串
-- 马拉车习题(ppt后面)
-- tire树习题加两题HDU1298-T9,UVA1401-Remember the Word;NBUT1597:Find MaxXorSum
+- LCA题目 https://blog.csdn.net/m0_37809890/article/details/82856158
+
+- tarjan题目
 
 dp
 - dp2优化课件(单调队列)
+
 - 区间dp加题目
 - 概率dp加题目
-- 单调栈 https://blog.csdn.net/m0_37809890/article/details/82851926
+
+- 难的dp123(luogu)
+
 - 数位dp https://blog.csdn.net/m0_37809890/article/details/82703944
+
+- 单调栈 https://blog.csdn.net/m0_37809890/article/details/82851926
 - LIS https://blog.csdn.net/m0_37809890/article/details/80602081
 
 others
-- 难的dp123(luogu) - jjm
+
 - 质数筛专题加题目
 - 高斯消元 https://blog.csdn.net/m0_37809890/article/details/80947182
 - 同余扩欧剩余逆元题目
-- 更高难度的组合数两道题待补充
-- 组合数学ppt要重新做 - lwg
+
+- 组合数学ppt要重新做
+
 - 二分与图论加题目(架设电话线, 关押罪犯)
 - 二分与模拟加题(聪明的质检员)
+
+字符串
+- 马拉车习题(ppt后面)
+
+
 
 ## markdown tips:
 

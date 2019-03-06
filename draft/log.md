@@ -17,17 +17,27 @@ phython96 | 蔡少斐
 Tawn0000 | 凌晓
 zoesky1 | 朱明清
 
+## 2019.3.6
+
+- lwg: 
+- wcn: 
+- jhx: 马拉车习题
+- csf: 区间dp与概率dp加题目
+- yjh: 
+- lzp: 
+- zmq: ~~做毕设，五月继续~~
+- jjm: ~~3.9 3.10号还有两场~~
+
 ## 2019.2.20
 
-- zmq: 基础哈希
-- lwg: ac自动机
-- wcn: 并查集
-- jhx: 容斥
-- csf: 抽屉原理
-- lx: stl 与 读入
-- yjh: 最短路生成树完善
+- zmq: ~~基础哈希，做毕设，五月继续~~
+- lwg: ~~ac自动机~~
+- wcn: ~~并查集~~
+- jhx: ~~容斥~~
+- csf: ~~抽屉原理~~
+- lx: ~~stl 与 读入~~
+- yjh: ~~最短路生成树完善~~
 - jjm: ~~补考，休息两周，继续休假~~
-
 
 ## 2019.2.20
 
@@ -39,7 +49,6 @@ zoesky1 | 朱明清
 - lx: 启发式搜索，迭代加深搜索， “正在做”
 - yjh: ~~贪心~~
 - jjm: ~~补考，休息两周~~
-
 
 ## 2019.2.14
 
@@ -77,7 +86,7 @@ zoesky1 | 朱明清
 
 ## 完成历史使命
 
-## Schedule
+Schedule
 
 章节|课件进度 | 题目进度 | 题目总结
 --- | --- |---| ---
@@ -111,18 +120,6 @@ zoesky1 | 朱明清
 - 博弈论???
 
 ## 完成就删
-
-c++ 特性
-- c++ pair详解 https://blog.csdn.net/lwgkzl/article/details/84202383
-- c++ auto, https://blog.csdn.net/lwgkzl/article/details/82110068
-- C++结构体指针 常用用法及注意事项, https://blog.csdn.net/lwgkzl/article/details/81866016
-
-字符串与读入
-- getline https://blog.csdn.net/lwgkzl/article/details/53735914
-- C语言 gets（）和scanf（）函数的区别 https://blog.csdn.net/lwgkzl/article/details/53222676
-- string用法 https://blog.csdn.net/lwgkzl/article/details/53729256
-- scnaf先后输入同一个字符数组是否会有影响 https://blog.csdn.net/lwgkzl/article/details/53781265
-- 别用cin https://acm.ecnu.edu.cn/problem/3532/discussion/
 
 课件: hash, 
 - 哈希 https://blog.csdn.net/lwgkzl/article/details/81866016
