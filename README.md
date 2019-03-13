@@ -41,12 +41,6 @@ dp
 
 - 难的dp123(luogu)(分三周)
 
-- 数位dp https://blog.csdn.net/m0_37809890/article/details/82703944
-
-- 单调栈 https://blog.csdn.net/m0_37809890/article/details/82851926
-- https://blog.csdn.net/m0_37809890/article/details/82851926
-- LIS https://blog.csdn.net/m0_37809890/article/details/80602081
-
 others
 
 - 高斯消元 https://blog.csdn.net/m0_37809890/article/details/80947182

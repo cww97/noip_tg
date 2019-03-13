@@ -20,11 +20,11 @@ zoesky1 | 朱明清
 ## 2019.3.13
 
 - lwg: -
-- wcn: 
+- wcn: 单调栈
 - jhx: -
 - csf: -
-- yjh: 
-- lzp: -
+- yjh: 数位dp
+- lzp: ~~下周见~~
 - jjm: tarjan题目
 
 
@@ -129,7 +129,10 @@ Schedule
 
 - 博弈论???
 
-## 下周搞定了删
+## done delete
 
-- 二分与图论加题目(架设电话线, 关押罪犯)
-- 二分与模拟加题(聪明的质检员)
+- 数位dp https://blog.csdn.net/m0_37809890/article/details/82703944
+
+- 单调栈 https://blog.csdn.net/m0_37809890/article/details/82851926
+- https://blog.csdn.net/m0_37809890/article/details/82851926
+- LIS https://blog.csdn.net/m0_37809890/article/details/80602081
