@@ -36,8 +36,6 @@ Chapter | Content
 
 - KM算法
 
-- tarjan题目
-
 dp
 - dp2优化课件(单调队列)
 
@@ -46,6 +44,7 @@ dp
 - 数位dp https://blog.csdn.net/m0_37809890/article/details/82703944
 
 - 单调栈 https://blog.csdn.net/m0_37809890/article/details/82851926
+- https://blog.csdn.net/m0_37809890/article/details/82851926
 - LIS https://blog.csdn.net/m0_37809890/article/details/80602081
 
 others
@@ -53,6 +52,7 @@ others
 - 高斯消元 https://blog.csdn.net/m0_37809890/article/details/80947182
 
 - 组合数学ppt要拆成多个小专题(只管拆就行了，细化留给后来人)
+
 
 
 ## markdown tips:
