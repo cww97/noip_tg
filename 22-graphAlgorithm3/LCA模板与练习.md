@@ -1,11 +1,12 @@
 # LCA 模板与练习
 
-##luoguP3379 【模板】最近公共祖先（LCA)
+## luoguP3379 【模板】最近公共祖先（LCA)
+
 平常在信息学竞赛中求LCA一般有三种办法：
 
 ### 1.倍增法求解
 
-预处理复杂度是 O(nlogn)O(nlog⁡n) ,每次询问的复杂度是 O(logn)O(log⁡n), 属于在线解法。
+预处理复杂度是 O(nlogn) ,每次询问的复杂度是 O(logn), 属于在线解法。
 
 ```c++
 /*by kzl*/
@@ -122,7 +123,7 @@ int main(){
 
 ### 2.利用欧拉序转化为RMQ问题
 
-用 ST表 求解RMQ问题，预处理复杂度 O(n+nlogn)O(n+nlog⁡n) ，每次询问的复杂度为 O(1)O(1)， 也是在线算法。
+用 ST表 求解RMQ问题，预处理复杂度 O(n+nlogn) ，每次询问的复杂度为 O(1)， 也是在线算法。
 ```c++
 /*by kzl*/
 #include<iostream>
@@ -248,7 +249,7 @@ int main(){
 
 ### 3.采用Tarjan算法求解
 
-复杂度 O(α(n)+Q)O(α(n)+Q) ，属于离线算法。
+复杂度 O(α(n)+Q) ，属于离线算法。
 ```c++
 /*by kzl*/
 #include<iostream>
