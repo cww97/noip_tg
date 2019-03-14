@@ -37,15 +37,15 @@ Chapter | Content
 - KM算法
 
 dp
-- dp2优化课件(单调队列)
 
-- 难的dp123(luogu)(分三周)
+- dp2优化课件(单调队列)
 
 others
 
-- 高斯消元 https://blog.csdn.net/m0_37809890/article/details/80947182
 
 - 组合数学ppt要拆成多个小专题(只管拆就行了，细化留给后来人)
+
+- 稍难的dp123(luogu)(分三周)
 
 
 

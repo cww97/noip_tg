@@ -19,7 +19,7 @@ zoesky1 | 朱明清
 
 ## 2019.3.13
 
-- lwg: -
+- lwg: 高斯消元
 - wcn: 单调栈
 - jhx: -
 - csf: -
@@ -30,7 +30,7 @@ zoesky1 | 朱明清
 
 ## 2019.3.6
 
-- lwg: lca题目，emmmm这次需要稍微晚一点交货了今晚或明天~
+- lwg: ~~lca题目，emmmm这次需要稍微晚一点交货了今晚或明天~~
 - wcn: ~~质数晒专题题目充实~~
 - jhx: 马拉车习题
 - csf: 区间dp与概率dp加题目
@@ -136,3 +136,7 @@ Schedule
 - 单调栈 https://blog.csdn.net/m0_37809890/article/details/82851926
 - https://blog.csdn.net/m0_37809890/article/details/82851926
 - LIS https://blog.csdn.net/m0_37809890/article/details/80602081
+
+
+
+- 高斯消元 https://blog.csdn.net/m0_37809890/article/details/80947182
