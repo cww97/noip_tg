@@ -36,18 +36,11 @@ Chapter | Content
 
 - KM算法
 
-dp
-
-- dp2优化课件(单调队列)
-
 others
-
 
 - 组合数学ppt要拆成多个小专题(只管拆就行了，细化留给后来人)
 
 - 稍难的dp123(luogu)(分三周)
-
-
 
 ## markdown tips:
 
