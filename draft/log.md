@@ -21,7 +21,7 @@ zoesky1 | 朱明清
 
 - lwg: 高斯消元
 - wcn: 单调栈
-- jhx: -
+- jhx: KM算法
 - csf: -
 - yjh: 数位dp
 - lzp: ~~下周见~~

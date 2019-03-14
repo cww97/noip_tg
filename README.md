@@ -32,10 +32,6 @@ Chapter | Content
 
 ## Next Plan
 
-图论
-
-- KM算法
-
 others
 
 - 组合数学ppt要拆成多个小专题(只管拆就行了，细化留给后来人)
