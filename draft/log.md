@@ -22,11 +22,10 @@ zoesky1 | 朱明清
 - lwg: 高斯消元
 - wcn: 单调栈
 - jhx: KM算法
-- csf: -
+- csf: ~~论文了论文了~~
 - yjh: 数位dp
 - lzp: ~~下周见~~
 - jjm: tarjan题目
-
 
 ## 2019.3.6
 
@@ -136,7 +135,5 @@ Schedule
 - 单调栈 https://blog.csdn.net/m0_37809890/article/details/82851926
 - https://blog.csdn.net/m0_37809890/article/details/82851926
 - LIS https://blog.csdn.net/m0_37809890/article/details/80602081
-
-
 
 - 高斯消元 https://blog.csdn.net/m0_37809890/article/details/80947182
