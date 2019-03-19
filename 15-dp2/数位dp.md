@@ -1,9 +1,5 @@
 # 数位DP
 
-## 做题链接：[GO](https://vjudge.net/contest/284355)
-
-### Password：aomeng
-
 ## 题目一：Bomb
 
 [HDOJ 3555](http://acm.hdu.edu.cn/showproblem.php?pid=3555)
@@ -416,8 +412,8 @@ RT
 用`dp[i][j][k]`表示长度为`i`，最高位为`j`的所有数中数码`k`出现的次数。
 为了预处理出`dp`数组，我们现需要找到转移方程
 
-1. f[i][j][k]=∑f[i-1][l][k]              (j!=k)
-2. f[i][j][k]=∑f[i-1][l][k]+10i-1        (j!=k)
+    1. f[i][j][k]=∑f[i-1][l][k]                 (j!=k)
+    2. f[i][j][k]=∑f[i-1][l][k]+10^(i-1)        (j!=k)
 
 第一种情况就是直接在前面加一个非`k`的数，结果跟长度为`i-1`时相同
 
