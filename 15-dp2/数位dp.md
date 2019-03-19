@@ -315,36 +315,303 @@ int main()
 ```
 
 
-## 题目一：The Best Path
+## 题目三：windy数
 
-[HDOJ 5883](http://acm.hdu.edu.cn/showproblem.php?pid=5883)
+[BZOJ 1026](https://www.lydsy.com/JudgeOnline/problem.php?id=4513)
 
 ### 题意
 
+RT
 
 ### 思路
 
+用`dp[i][j]`表示长度为`i`，最高位为`j`的`windy`数个数，可以用暴力求得。
+
+然后就是不断地分解输入的这个数，累加答案即可。
+
+唯一值得注意的是，`solve`函数求出的是`[1,x-1]`内`windy`数的个数，因为每次都是从比当前位小的数去统计，没有考虑`x`是否为`windy`数。
+
+具体细节见代码。
 
 
 ### 代码
 
 ```c++
+#include <cmath>
+#include <cstdio>
+#include <cstring>
+#include <algorithm>
+using namespace std;
+#define mst(a,b) memset((a),(b),sizeof(a))
+#define rush() int T;scanf("%d",&T);while(T--)
 
+typedef long long ll;
+const int maxn = 15;
+const ll mod = 1e9+7;
+const ll INF = 1e18;
+const double eps = 1e-6;
+
+int digit[maxn];
+ll dp[maxn][maxn];
+
+void init()
+{
+    mst(dp,0);
+    for(int i=0;i<=9;i++) dp[1][i]=1;
+    for(int i=2;i<=10;i++)
+    for(int j=0;j<=9;j++)
+    for(int k=0;k<=9;k++)
+    {
+        if(abs(j-k)>=2) dp[i][j]+=dp[i-1][k];
+    }
+}
+
+ll solve(ll x)
+{
+    ll ans=0;
+    if(x==0) return 0;
+    mst(digit,0);
+    int len=0;
+    while(x)
+    {
+        digit[++len]=x%10;
+        x/=10;
+    }
+    for(int i=1;i<=digit[len]-1;i++) ans+=dp[len][i]; //长度相等，最高位小于
+    for(int i=1;i<=len-1;i++)   //长度小于
+    for(int j=1;j<=9;j++)
+    {
+        ans+=dp[i][j];
+    }
+    for(int i=len-1;i>0;i--)    //前面固定后，枚举每一位
+    {
+        for(int j=0;j<=digit[i]-1;j++)
+        {
+            if(abs(digit[i+1]-j)>=2) ans+=dp[i][j];
+        }
+        if(abs(digit[i+1]-digit[i])<2) break;
+    }
+    return ans;
+}
+
+int main()
+{
+    ll a,b;
+    scanf("%lld%lld",&a,&b);
+    init();
+    printf("%lld\n",solve(b+1)-solve(a));
+}
 ```
 
-## 题目一：The Best Path
+## 题目四：count 数字计数
 
-[HDOJ 5883](http://acm.hdu.edu.cn/showproblem.php?pid=5883)
+[BZOJ 1833](https://www.lydsy.com/JudgeOnline/problem.php?id=1833)
 
 ### 题意
 
+RT
 
 ### 思路
 
+用`dp[i][j][k]`表示长度为`i`，最高位为`j`的所有数中数码`k`出现的次数。
+为了预处理出`dp`数组，我们现需要找到转移方程
+
+1. f[i][j][k]=∑f[i-1][l][k]              (j!=k)
+2. f[i][j][k]=∑f[i-1][l][k]+10i-1        (j!=k)
+
+第一种情况就是直接在前面加一个非`k`的数，结果跟长度为`i-1`时相同
+
+第二种情况就是在前面加一个`k`，因为后面`i-1`位共有`2^(i-1)`个数，那么就相当于多了`2^(i-1)个k`
+
+然后就是对读入的数分别求出每个数码有几个，相减即可。
 
 
 ### 代码
 
 ```c++
+#include <cmath>
+#include <cstdio>
+#include <cstring>
+#include <algorithm>
+using namespace std;
+#define mst(a,b) memset((a),(b),sizeof(a))
+#define rush() int T;scanf("%d",&T);while(T--)
 
+typedef long long ll;
+const int maxn = 15;
+const ll mod = 1e9+7;
+const ll INF = 1e18;
+const double eps = 1e-6;
+
+ll fac[15];
+ll dp[15][10][10];
+int digit[15];
+ll ans1[10],ans2[10];
+
+void init()
+{
+    mst(dp,0);
+    fac[0]=1;
+    for(int i=1;i<=14;i++) fac[i]=fac[i-1]*10;
+    for(int i=0;i<=9;i++) dp[1][i][i]=1;
+    for(int i=2;i<=13;i++)
+    for(int j=0;j<=9;j++)
+    {
+        for(int l=0;l<=9;l++)
+        {
+            for(int k=0;k<=9;k++)
+            {
+                dp[i][j][k]+=dp[i-1][l][k];
+            }
+        }
+        dp[i][j][j]+=fac[i-1];
+    }
+}
+
+void solve(ll x,ll *num)
+{
+    mst(digit,0);
+    if(x==0) return;
+    int len=0;
+    ll tmp=x;
+    while(tmp)
+    {
+        digit[++len]=tmp%10;
+        tmp/=10;
+    }
+    for(int i=1;i<len;i++)  //长度小于len的所有情况
+    for(int j=1;j<=9;j++)
+    for(int k=0;k<=9;k++)
+    {
+        num[k]+=dp[i][j][k];
+    }
+    for(int i=1;i<=digit[len]-1;i++)  //长度等于len且最高位不超过digit[len]的所有情况
+    for(int k=0;k<=9;k++)
+    {
+        num[k]+=dp[len][i][k];
+    }
+    x%=fac[len-1];
+    num[digit[len]]+=x+1;            //例如x=4532,把x变为532，统计532，数码4的个数加上532+1(4000~4532)
+    for(int i=len-1;i>0;i--)         //以此类推
+    {
+        for(int j=0;j<digit[i];j++)
+        for(int k=0;k<=9;k++)
+        {
+            num[k]+=dp[i][j][k];
+        }
+        x%=fac[i-1];
+        num[digit[i]]+=(x+1);
+    }
+}
+
+int main()
+{
+    init();
+    ll x,y;
+    scanf("%lld%lld",&x,&y);
+    solve(y,ans1);
+    solve(x-1,ans2);
+    for(int i=0;i<=8;i++) printf("%lld ",ans1[i]-ans2[i]);
+    printf("%lld\n",ans1[9]-ans2[9]);
+}
+```
+
+## 题目五：储能表
+
+[BZOJ 4513](https://www.lydsy.com/JudgeOnline/problem.php?id=4513)
+
+### 题意
+
+RT
+
+### 思路
+
+由于是异或且数据范围较大，于是可以考虑二进制分解，根据题意，我们只要算出`i^j>k`的个数和异或和就能得到解，考虑从高位到低位进行数位`DP`。
+
+我们用`num[pos][a][b][c]`表示`i`和`j`从高到低确定到`pos`位,`i`和`n`的当前位`nown`的关系为`a`,`j`和`m`的当前位`nowm`的关系为`b`，`i^j`与`k`的当前位`nowk`的关系为`c`满足条件的方案数。
+
+对应的,`sum[pos][a][b][c]`表示总的异或和。
+
+其中当`a，b`等于`0`时，表示小于`n,m`当前位，而等于`1`时表示等于当前位
+
+当`c`等于0时，表示大于`k`当前位，等于`1`时表示等于当前位。
+
+然后就由`num[i+1]`转移到`num[i]`
+
+由`num[i+1]`和`sum[i+1]`转移到`sum[i]`即可
+
+最后答案为`sum[0][0][0][0]`-`num[0][0][0][0]*k`
+
+### 代码
+
+```c++
+#include <cmath>
+#include <cstdio>
+#include <cstring>
+#include <algorithm>
+using namespace std;
+#define mst(a,b) memset((a),(b),sizeof(a))
+#define rush() int T;scanf("%d",&T);while(T--)
+
+typedef long long ll;
+const int maxn = 1005;
+const ll mod = 1e9+7;
+const ll INF = 1e18;
+const double eps = 1e-6;
+
+ll n,m,k,Mod;
+ll num[65][2][2][2];
+ll sum[65][2][2][2];
+ll fac[maxn];
+
+void init()
+{
+    fac[0]=1;
+    fac[1]=2;
+    for(int i=2;i<=62;i++)
+    {
+        fac[i]=fac[i-1]*2%Mod;
+    }
+}
+
+int main()
+{
+    rush()
+    {
+        scanf("%lld%lld%lld%lld",&n,&m,&k,&Mod);
+        init();
+        mst(num,0);
+        mst(sum,0);
+        num[61][1][1][1]=1;
+        for(int i=60;i>=0;i--)
+        for(int a=0;a<2;a++) //0:小于 1：等于
+        for(int b=0;b<2;b++)
+        for(int c=0;c<2;c++) //0：大于 1：等于
+        {
+            if(num[i+1][a][b][c])
+            {
+                int nown=(n>>i)&1;
+                int nowm=(m>>i)&1;
+                int nowk=(k>>i)&1;
+                for(int x=0;x<=(a?nown:1);x++)
+                for(int y=0;y<=(b?nowm:1);y++)
+                {
+                    int kk=x^y;
+                    if(c&&kk<nowk) continue;
+                    num[i][a&&x==nown][b&&y==nowm][c&&kk==nowk]+=num[i+1][a][b][c];
+                    num[i][a&&x==nown][b&&y==nowm][c&&kk==nowk]%=Mod;
+                    sum[i][a&&x==nown][b&&y==nowm][c&&kk==nowk]+=sum[i+1][a][b][c];
+                    sum[i][a&&x==nown][b&&y==nowm][c&&kk==nowk]%=Mod;
+                    if(kk)
+                    {
+                        sum[i][a&&x==nown][b&&y==nowm][c&&kk==nowk]+=fac[i]*num[i+1][a][b][c]%Mod;  //当前位的贡献
+                        sum[i][a&&x==nown][b&&y==nowm][c&&kk==nowk]%=Mod;
+                    }
+                }
+            }
+        }
+        k%=Mod;
+        printf("%lld\n",(sum[0][0][0][0]-k*num[0][0][0][0]%Mod+Mod)%Mod);
+    }
+}
 ```
