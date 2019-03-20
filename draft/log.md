@@ -14,14 +14,22 @@ F-TD5X | 蒋涵欣
 lianfengs | 蒋程旭
 lwgkzl | 刘文阁
 phython96 | 蔡少斐
+refrainnb | 李泽鹏
 Tawn0000 | 凌晓
 zoesky1 | 朱明清
 
+## 2019.3.20
+
+- 大四要忙毕设的：lwg, zmq, jhx, csf
+- 大三的能打的： wcn, lzp, yjh, jjm
+
+毕业论文放大假了
+
 ## 2019.3.13
 
-- lwg: 高斯消元
+- lwg: ~~高斯消元~~
 - wcn: ~~单调栈~~
-- jhx: KM算法
+- jhx: ~~KM算法~~
 - csf: ~~论文了论文了~~
 - yjh: ~~数位dp~~
 - lzp: ~~下周见~~
@@ -127,13 +135,3 @@ Schedule
 ## 省选(可能这辈子都做不完了)
 
 - 博弈论???
-
-## done delete
-
-- 数位dp https://blog.csdn.net/m0_37809890/article/details/82703944
-
-- 单调栈 https://blog.csdn.net/m0_37809890/article/details/82851926
-- https://blog.csdn.net/m0_37809890/article/details/82851926
-- LIS https://blog.csdn.net/m0_37809890/article/details/80602081
-
-- 高斯消元 https://blog.csdn.net/m0_37809890/article/details/80947182
